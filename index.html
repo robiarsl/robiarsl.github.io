@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"/>
     <!-- My Css -->
     <link rel="stylesheet" href="Style.css" />
+    <!-- Aos -->
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Website -->
     <title>My Portfolio | Robi Arsala</title>
   </head>
@@ -45,7 +47,7 @@
     <section id="home" class="jumbotron text-center">
       <img src="IMG.jpg" alt="" width="200" class="rounded-circle img-thumbnail" />
       <h1 class="text-light display-4">Robi Arsala</h1>
-      <p class="text-light lead">Mahasiswa | Manusia Biasa</p>
+      <p class="text-light lead">Founder - Umbrella Corp</p>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#ffffff"
@@ -57,17 +59,17 @@
     <!-- Akhir Jumbotron -->
     <!-- About -->
     <section id="about">
-      <div class="container">
+      <div class="container ">
         <div class="row text-center mb-4">
           <div class="col">
-            <h2 class="fw-bold">About Me</h2>
+            <h2 class="fw-bold" data-aos="zoom-in" data-aos-duration="3000">About Me</h2>
           </div>
         </div>
         <div class="row justify-content-around fs-5 text-center">
-          <div class="col-md-4">
+          <div class="col-md-4"data-aos="fade-right"data-aos-duration="3000">
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam nisi vitae quibusdam sapiente odit officiis animi minus accusamus, praesentium beatae omnis rerum incidunt magnam deleniti alias impedit vero facere sit!</p>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4"data-aos="fade-left"data-aos-duration="3000">
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis tempora harum nisi fugiat, earum rerum magnam, exercitationem possimus officia, numquam minima alias. Et repellendus iusto fuga quos id culpa suscipit!</p>
           </div>
         </div>
@@ -83,7 +85,7 @@
     <!-- Akhir About -->
     <!-- Skills -->
     <section id="Skills">
-      <div class="container">
+      <div class="container"data-aos="zoom-in"data-aos-duration="3000">
         <div class="row mb-3 text-center">
           <div class="col">
             <h2 class="text-light fw-bold">My Skills</h2>
@@ -92,7 +94,7 @@
       </div>
       <div class="row justify-content-around">
         <div class="col-md-3 mb-3">
-          <div class="card">
+          <div class="card"data-aos="flip-up"data-aos-duration="3000">
             <img src="unsplash.jpg" class="card-img-top" alt="Rebahan" />
             <div class="card-body">
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -100,7 +102,7 @@
           </div>
         </div>
         <div class="col-md-3 mb-3">
-          <div class="card">
+          <div class="card"data-aos="flip-up"data-aos-duration="3000">
             <img src="unsplash2.jpg" class="card-img-top" alt="Main Game" />
             <div class="card-body">
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -108,7 +110,7 @@
           </div>
         </div>
         <div class="col-md-3 mb-3">
-          <div class="card">
+          <div class="card"data-aos="flip-up"data-aos-duration="3000">
             <img src="unsplash3.jpg" class="card-img-top" alt="Bermain Bola" />
             <div class="card-body">
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -129,12 +131,12 @@
     <section id="contact">
       <div class="container">
         <div class="row text-center">
-          <div class="col">
+          <div class="col"data-aos="zoom-in"data-aos-duration="2000">
             <h2 class="fw-bold">Contact Me</h2>
           </div>
         </div>
       </div>
-      <div class="row justify-content-center">
+      <div class="row justify-content-center"data-aos="fade-up"data-aos-duration="2000">
         <div class="col-md-6">
           <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
             <strong>Terima Kasih!</strong> Pesan anda sudah saya terima.
@@ -162,7 +164,7 @@
       </div>
           </form>
     </section>
-    <br><br>
+    <br><br><br><br><br><br><br><br>
     <!-- Akhir Contact -->
     <!-- Footer -->
     <footer class="text-white bg-primary text-center p-3">
@@ -170,6 +172,17 @@
     </footer>
     <!-- Akhir Footer -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/TextPlugin.min.js"></script>
+    <script>
+      gsap.registerPlugin(TextPlugin);
+      gsap.from(".jumbotron img", {duration:1,y:-100,opacity:0, ease:"bounce"
+      })
+      </script>
     <script>
       const scriptURL = 'https://script.google.com/macros/s/AKfycbydmdE056jMnS-znLCUaRuf-7RktmpG434bAdSqjucnTjgjMwcEDJjJrOUE9vGoOOo/exec'
       
