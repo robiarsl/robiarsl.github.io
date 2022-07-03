@@ -1,0 +1,21 @@
+Source code harus diterjemahkan ke bahasa mesin
+ada dua cara untuk menerjemahkan sc yang telah dibuat agar bisa dijalankan 
+compiler vs interpreter
+
+
+Operator Pada Java Script
+Aritmatika
+Penugasan (=)
+--> Var x
+x = 10
+
+Perbandingan
+Logika
+--> operator dan , atau, not, 
+String
+
+Kondisional
+Typeof
+
+Pop-Up box -->
+Alert,prompt, confirm.
