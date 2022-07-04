@@ -14,7 +14,7 @@
     <!-- Aos -->
       <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Website -->
-    <title>My Portfolio | Robi Arsala</title>
+    <title>My Website | Robi Arsala</title>
   </head>
   <body>
     <!--Navbar  -->
@@ -33,7 +33,7 @@
               <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#Skills">My Skills</a>
+              <a class="nav-link" href="#Hobbies">My Hobbies</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
@@ -47,7 +47,7 @@
     <section id="home" class="jumbotron text-center">
       <img src="IMG.jpg" alt="" width="200" class="rounded-circle img-thumbnail" />
       <h1 class="text-light display-4">Robi Arsala</h1>
-      <p class="text-light lead">Founder - Umbrella Corp</p>
+      <p class="text-light lead"></p>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#ffffff"
@@ -62,7 +62,7 @@
       <div class="container ">
         <div class="row text-center mb-4">
           <div class="col">
-            <h2 class="fw-bold" data-aos="zoom-in" data-aos-duration="3000">About Me</h2>
+            <h2 class="fw-bold" data-aos="zoom-in" data-aos-duration="3000" style="font-family:times new roman ;">About Me</h2>
           </div>
         </div>
         <div class="row justify-content-around fs-5 text-center">
@@ -84,11 +84,11 @@
     </section>
     <!-- Akhir About -->
     <!-- Skills -->
-    <section id="Skills">
+    <section id="Hobbies">
       <div class="container"data-aos="zoom-in"data-aos-duration="3000">
         <div class="row mb-3 text-center">
           <div class="col">
-            <h2 class="text-light fw-bold">My Skills</h2>
+            <h2 class="text-light fw-bold" style="font-family:'times new roman' ;">My Hobbies</h2>
           </div>
         </div>
       </div>
@@ -132,7 +132,7 @@
       <div class="container">
         <div class="row text-center">
           <div class="col"data-aos="zoom-in"data-aos-duration="2000">
-            <h2 class="fw-bold">Contact Me</h2>
+            <h2 class="fw-bold" style="font-family:times new roman ;">Contact Me</h2>
           </div>
         </div>
       </div>
@@ -180,6 +180,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/TextPlugin.min.js"></script>
     <script>
       gsap.registerPlugin(TextPlugin);
+      gsap.to('.lead', {duration:2, delay:1.5, text:'Founder - Umbrella Corp'});
       gsap.from(".jumbotron img", {duration:1,y:-100,opacity:0, ease:"bounce"
       })
       </script>
